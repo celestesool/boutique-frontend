@@ -1,4 +1,3 @@
-import React, { useEffect }from 'react';
 import { useCart } from '../../../context/CartContext';
 
 const PurchaseReceipt = () => {
