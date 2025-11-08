@@ -37,7 +37,7 @@ const Sidebar = () => {
             {user?.nombre?.charAt(0).toUpperCase() || 'U'}
           </Avatar>
           <h2 className="text-blue text-sm font-bold text-center">{user?.nombre || 'Usuario'}</h2>
-          <p className="text-xs text-gray-500">{user?.rol || 'Cliente'}</p>
+          <p className="text-xs text-gray-500">{user?.rol?.nombre || user?.rolNombre || 'Cliente'}</p>
         </div>
         <Menu
           mode="inline"

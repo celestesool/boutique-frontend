@@ -8,7 +8,11 @@ export const REGISTER = gql`
         id
         nombre
         email
-        rol
+        rolNombre
+        rol {
+          id
+          nombre
+        }
         createdAt
       }
     }
@@ -23,7 +27,11 @@ export const LOGIN = gql`
         id
         nombre
         email
-        rol
+        rolNombre
+        rol {
+          id
+          nombre
+        }
       }
     }
   }
@@ -35,7 +43,11 @@ export const GET_ME = gql`
       id
       nombre
       email
-      rol
+      rolNombre
+      rol {
+        id
+        nombre
+      }
       createdAt
     }
   }
